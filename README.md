@@ -1,23 +1,4 @@
-<p align="center">
-    <a href="https://www.mangoweb.cz/en/" target="_blank">
-        <img src="https://avatars0.githubusercontent.com/u/38423357?s=200&v=4"/>
-    </a>
-</p>
-<h1 align="center">
-Extended Channels Plugin
-<br />
-    <a href="https://packagist.org/packages/mangoweb-sylius/sylius-extended-channels" title="License" target="_blank">
-        <img src="https://img.shields.io/packagist/l/mangoweb-sylius/sylius-extended-channels.svg" />
-    </a>
-    <a href="https://packagist.org/packages/mangoweb-sylius/sylius-extended-channels" title="Version" target="_blank">
-        <img src="https://img.shields.io/packagist/v/mangoweb-sylius/sylius-extended-channels.svg" />
-    </a>
-    <a href="http://travis-ci.org/mangoweb-sylius/SyliusExtendedChannelsPlugin" title="Build status" target="_blank">
-        <img src="https://img.shields.io/travis/mangoweb-sylius/SyliusExtendedChannelsPlugin/master.svg" />
-    </a>
-    <br />
-    <img src="https://sylius.com/assets/badge-approved-by-sylius.png" alt="Approved by Sylius" width="120"/>
-</h1>
+WIP
 
 ## Features
 
