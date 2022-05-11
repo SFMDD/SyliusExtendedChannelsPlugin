@@ -110,7 +110,7 @@ class ManageProductCategoriesController
 
 			// Eg. for update products in elasticsearch
 			$event = new GenericEvent($productIds);
-			$this->eventDispatcher->dispatch('mango-sylius-extended-channels.products.after_bulk_categories', $event);
+			$this->eventDispatcher->dispatch($event, 'mango-sylius-extended-channels.products.after_bulk_categories');
 
 			return new RedirectResponse($this->router->generate('sylius_admin_product_index'));
 		}

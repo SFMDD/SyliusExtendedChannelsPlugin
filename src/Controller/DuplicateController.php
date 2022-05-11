@@ -77,9 +77,9 @@ class DuplicateController
 		$clonedEntity = $this->productDuplicator->duplicateProduct($entity);
 
 		$event = new GenericEvent($clonedEntity, ['oldEntity' => $entity]);
-		$this->eventDispatcher->dispatch('mango-sylius-extended-channels.duplicate.product.before-persist', $event);
+		$this->eventDispatcher->dispatch($event, 'mango-sylius-extended-channels.duplicate.product.before-persist');
 		$this->productRepository->add($clonedEntity);
-		$this->eventDispatcher->dispatch('mango-sylius-extended-channels.duplicate.product.after-persist', $event);
+		$this->eventDispatcher->dispatch($event, 'mango-sylius-extended-channels.duplicate.product.after-persist');
 
 		$message = $this->translator->trans('mango-sylius.admin.product.success');
 		$this->flashBag->add('success', $message);
@@ -100,9 +100,9 @@ class DuplicateController
 		$clonedEntity = $this->productDuplicator->duplicateProductVariant($product, $entity);
 
 		$event = new GenericEvent($clonedEntity);
-		$this->eventDispatcher->dispatch('mango-sylius-extended-channels.duplicate.product-variant.before-persist', $event);
+		$this->eventDispatcher->dispatch($event, 'mango-sylius-extended-channels.duplicate.product-variant.before-persist');
 		$this->productVariantRepository->add($clonedEntity);
-		$this->eventDispatcher->dispatch('mango-sylius-extended-channels.duplicate.product-variant.after-persist', $event);
+		$this->eventDispatcher->dispatch($event, 'mango-sylius-extended-channels.duplicate.product-variant.after-persist');
 
 		$message = $this->translator->trans('mango-sylius.admin.product_variant.success');
 		$this->flashBag->add('success', $message);
